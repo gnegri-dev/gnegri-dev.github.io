@@ -3,82 +3,105 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio – Gustavo Negri</title>
+  <title>Portfólio - Gustavo Negri</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="header">
-    <div class="container">
-      <h1>Gustavo Negri</h1>
-      <p>Desenvolvedor Front-End em formação</p>
+    <div class="container header__content">
+      <div class="header__text">
+        <span class="chip">Portfólio Front-End</span>
+        <h1 class="header__title">Gustavo Negri</h1>
+        <p class="header__subtitle">
+          Desenvolvedor Front-End em formação, focado em HTML e CSS.
+          Esta página reúne meus primeiros projetos práticos, com foco em
+          formulários, navegação e estrutura semântica.
+        </p>
+        <a href="#projetos" class="btn btn--light">Ver projetos</a>
+      </div>
     </div>
   </header>
 
-  <main class="container">
-    <section class="section about">
-      <h2>Sobre mim</h2>
-      <p>
-        Estudante de desenvolvimento Front-End, focado em HTML, CSS e JavaScript.
-        Estou construindo meu portfólio com projetos práticos, começando por
-        formulários, landing pages e interfaces simples.
-      </p>
-    </section>
-
-    <section class="section projects">
-      <h2>Projetos</h2>
-
-      <article class="project-card">
-        <h3>User Registration Form (HTML + CSS)</h3>
-        <p>
-          Formulário de cadastro completo desenvolvido durante meus estudos na Mate Academy,
-          usando HTML5 e CSS3. Inclui validações nativas, múltiplos tipos de inputs,
-          organização com <code>fieldset</code> e estrutura semântica.
+  <main>
+    <section class="section" id="projetos">
+      <div class="container">
+        <h2 class="section__title">Projetos em destaque</h2>
+        <p class="section__subtitle">
+          Projetos desenvolvidos durante meus estudos, publicados com GitHub Pages.
         </p>
-        <div class="project-links">
-          <a href="https://gustavonegri575-lgtm.github.io/formulario-mate/" target="_blank">
-            Ver projeto online
-          </a>
-          <a href="https://github.com/gustavonegri575-lgtm/formulario-mate" target="_blank">
-            Ver código no GitHub
-          </a>
+
+        <div class="projects-grid">
+          <!-- Projeto 1 -->
+          <article class="project-card">
+            <span class="project-card__tag">Formulário</span>
+            <h3 class="project-card__title">
+              Formulário Interativo – HTML/CSS
+            </h3>
+            <p class="project-card__description">
+              Formulário de cadastro completo, com múltiplos tipos de inputs,
+              validações básicas e organização semântica usando
+              <code>fieldset</code> e <code>legend</code>. Layout simples e
+              limpo para treinar boas práticas de HTML e CSS.
+            </p>
+
+            <ul class="project-card__stack">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Formulários</li>
+              <li>GitHub Pages</li>
+            </ul>
+
+            <div class="project-card__actions">
+              <a
+                href="https://gustavonegri575-lgtm.github.io/formulario-mate/"
+                class="btn btn--primary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ver projeto online
+              </a>
+            </div>
+          </article>
+
+          <!-- Projeto 2 -->
+          <article class="project-card">
+            <span class="project-card__tag">Layout</span>
+            <h3 class="project-card__title">
+              Sticky Header Navigation Page
+            </h3>
+            <p class="project-card__description">
+              Landing page com cabeçalho fixo, navegação por âncoras e botão
+              flutuante de “voltar ao topo”. Estrutura pensada para treinar
+              posicionamento, hierarquia visual e navegação simples entre seções.
+            </p>
+
+            <ul class="project-card__stack">
+              <li>HTML semântico</li>
+              <li>CSS3</li>
+              <li>Position: sticky</li>
+              <li>Navegação por âncoras</li>
+            </ul>
+
+            <div class="project-card__actions">
+              <a
+                href="https://gustavonegri575-lgtm.github.io/sticky-header/"
+                class="btn btn--primary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ver projeto online
+              </a>
+            </div>
+          </article>
         </div>
-        <p class="project-tags">
-          HTML5 · CSS3 · Formulários · GitHub Pages
-        </p>
-      </article>
-
-      <!-- Quando tiver outros projetos, você copia o bloco <article> e ajusta -->
-    </section>
-
-    <section class="section contact">
-      <h2>Contato</h2>
-      <p>
-        Você pode entrar em contato comigo pelo LinkedIn ou e-mail.
-      </p>
-      <ul class="contact-list">
-        <li>
-          <a href="https://www.linkedin.com" target="_blank">
-            LinkedIn
-          </a>
-        </li>
-        <li>
-          <a href="mailto:SEU_EMAIL_AQUI">
-            SEU_EMAIL_AQUI
-          </a>
-        </li>
-      </ul>
+      </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container">
-      <small>© <span id="year"></span> Gustavo Negri</small>
+    <div class="container footer__content">
+      <p>© 2026 Gustavo Negri · Portfólio Front-End</p>
     </div>
-
-    <script>
-      const yearSpan = document.getElementById('year');
-      yearSpan.textContent = new Date().getFullYear();
-    </script>
   </footer>
 </body>
 </html>
