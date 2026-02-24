@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio – Gustavo Negri</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1>Gustavo Negri</h1>
+      <p>Desenvolvedor Front-End em formação</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section about">
+      <h2>Sobre mim</h2>
+      <p>
+        Estudante de desenvolvimento Front-End, focado em HTML, CSS e JavaScript.
+        Estou construindo meu portfólio com projetos práticos, começando por
+        formulários, landing pages e interfaces simples.
+      </p>
+    </section>
+
+    <section class="section projects">
+      <h2>Projetos</h2>
+
+      <article class="project-card">
+        <h3>User Registration Form (HTML + CSS)</h3>
+        <p>
+          Formulário de cadastro completo desenvolvido durante meus estudos na Mate Academy,
+          usando HTML5 e CSS3. Inclui validações nativas, múltiplos tipos de inputs,
+          organização com <code>fieldset</code> e estrutura semântica.
+        </p>
+        <div class="project-links">
+          <a href="https://gustavonegri575-lgtm.github.io/formulario-mate/" target="_blank">
+            Ver projeto online
+          </a>
+          <a href="https://github.com/gustavonegri575-lgtm/formulario-mate" target="_blank">
+            Ver código no GitHub
+          </a>
+        </div>
+        <p class="project-tags">
+          HTML5 · CSS3 · Formulários · GitHub Pages
+        </p>
+      </article>
+
+      <!-- Quando tiver outros projetos, você copia o bloco <article> e ajusta -->
+    </section>
+
+    <section class="section contact">
+      <h2>Contato</h2>
+      <p>
+        Você pode entrar em contato comigo pelo LinkedIn ou e-mail.
+      </p>
+      <ul class="contact-list">
+        <li>
+          <a href="https://www.linkedin.com" target="_blank">
+            LinkedIn
+          </a>
+        </li>
+        <li>
+          <a href="mailto:SEU_EMAIL_AQUI">
+            SEU_EMAIL_AQUI
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <small>© <span id="year"></span> Gustavo Negri</small>
+    </div>
+
+    <script>
+      const yearSpan = document.getElementById('year');
+      yearSpan.textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>
